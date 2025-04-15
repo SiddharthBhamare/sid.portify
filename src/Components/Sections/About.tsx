@@ -206,7 +206,7 @@ export const About: React.FC = () => {
                   <p className="text-sm">Jan 2018 – Jun 2021</p>
                   <p>
                     Worked on full-stack development for enterprise solutions
-                    using .NET, ADO.NET, and Oracle DB.
+                    using .NET, ADO.NET, and SQLServer DB.
                   </p>
                 </div>
               </div>
