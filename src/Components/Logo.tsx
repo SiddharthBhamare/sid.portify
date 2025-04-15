@@ -1,5 +1,3 @@
-import { Terminal } from "lucide-react"; // You can use other icons like "Activity", "Code", etc.
-
 const Logo = () => (
   <a
     href="#home"
