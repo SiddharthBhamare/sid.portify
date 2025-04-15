@@ -42,7 +42,7 @@ a:hover {
   }
 
   .animate-blink {
-    animation: blink 0.2s step-end infinite;
+    animation: blink 0.1s step-end infinite;
   }
 
   @keyframes loading {
@@ -55,7 +55,7 @@ a:hover {
   }
 
   .animate-loading-bar {
-    animation: loading 0.8s ease infinite;
+    animation: loading 0.3s ease infinite;
   }
 
   @keyframes gradientBG {

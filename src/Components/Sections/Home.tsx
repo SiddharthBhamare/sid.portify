@@ -9,7 +9,7 @@ export const Home = () => {
       <RevealOnScroll>
         <div className="max-w-4xl mx-auto px-6 bg-gradient-to-br from-white/5 to-cyan-500/5 backdrop-blur-sm rounded-2xl p-10 shadow-xl border border-white/10">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">
-            I'm CodeCraft.Dev
+            I'm Siddharth Bhamare
           </h1>
 
           <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
