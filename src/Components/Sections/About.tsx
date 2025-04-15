@@ -1,12 +1,6 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import { FaLinkedin, FaGithub, FaBlog } from "react-icons/fa"; // Importing icons from react-icons
 
-interface SkillsProps {
-  frontendSkills: string[];
-  backendSkills: string[];
-  toolsAndPrinciples: string[];
-}
-
 export const About: React.FC = () => {
   const frontendSkills: string[] = [
     "React",
