@@ -1,9 +1,21 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import { FaLinkedin, FaGithub, FaBlog } from "react-icons/fa"; // Importing icons from react-icons
 
-export const About = () => {
-  const frontendSkills = ["React", "JavaScript", "TypeScript", "HTML", "CSS"];
+interface SkillsProps {
+  frontendSkills: string[];
+  backendSkills: string[];
+  toolsAndPrinciples: string[];
+}
 
-  const backendSkills = [
+export const About: React.FC = () => {
+  const frontendSkills: string[] = [
+    "React",
+    "JavaScript",
+    "TypeScript",
+    "HTML",
+    "CSS",
+  ];
+  const backendSkills: string[] = [
     ".NET Core",
     "C#",
     "GraphQL (HotChocolate)",
@@ -11,8 +23,7 @@ export const About = () => {
     "PostgreSQL",
     "RabbitMQ",
   ];
-
-  const toolsAndPrinciples = [
+  const toolsAndPrinciples: string[] = [
     "Azure DevOps",
     "AWS (Beginner)",
     "CI/CD",
@@ -38,13 +49,14 @@ export const About = () => {
             <p className="text-gray-300 mb-6">
               Senior Software Engineer with 7+ years of experience in building
               scalable and efficient web applications using .NET and modern
-              JavaScript frameworks. Proficient in both frontend and backend
-              development, database management, and microservices architecture.
-              Skilled in GraphQL, RESTful APIs, JWT-based authentication, and
-              enterprise-grade integration using Azure, RabbitMQ, and DevOps
-              pipelines. Strong grasp of SOLID principles and design patterns,
-              passionate about clean code, test automation, and agile
-              collaboration.
+              JavaScript frameworks. <br />
+              <br />
+              Proficient in both frontend and backend development, database
+              management, and microservices architecture. Skilled in GraphQL,
+              RESTful APIs, JWT-based authentication, and enterprise-grade
+              integration using Azure, RabbitMQ, and DevOps pipelines. Strong
+              grasp of SOLID principles and design patterns, passionate about
+              clean code, test automation, and agile collaboration.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -92,6 +104,40 @@ export const About = () => {
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Links Section with Logos */}
+          <div className="mt-8">
+            <h3 className="text-xl font-bold mb-4 text-center">🔗 Links</h3>
+            <div className="flex justify-center gap-8 flex-wrap">
+              <a
+                href="https://www.linkedin.com/in/siddharth-bhamare-1839a7112/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-gray-300 hover:text-blue-600 transition-all"
+              >
+                <FaLinkedin size={30} />
+                <span>LinkedIn</span>
+              </a>
+              <a
+                href="https://github.com/SiddharthBhamare"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-gray-300 hover:text-black transition-all"
+              >
+                <FaGithub size={30} />
+                <span>GitHub</span>
+              </a>
+              <a
+                href="https://siddharthbhamare.github.io/learning-hub/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-gray-300 hover:text-teal-500 transition-all"
+              >
+                <FaBlog size={30} />
+                <span>Learning Hub</span>
+              </a>
             </div>
           </div>
 
